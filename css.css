@@ -2,7 +2,6 @@ body{
 	text-align: center;
 }
 
-
 .tt{
 	background-color: #A9A9A9;
 	border-top-right-radius:10px;
@@ -17,6 +16,7 @@ body{
 	position: relative;
 	border-radius: 40px;
 }
+
 .bott{
 	position: absolute;
 	top: 50%;
