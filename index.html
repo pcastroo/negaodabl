@@ -13,12 +13,12 @@
 			<div class="cont">
 					<h1 class="tt" class="font-weight-bolder">NEGÃO DA BL</h1>
 				<div class="bott">
-					<button type="button" class="btn btn-dark" onclick="padrao()">Padrão</button>
-					<button type="button" class="btn btn-dark" onclick="ratinho()">Ratinho version</button>
-					<button type="button" class="btn btn-dark" onclick="loli()">Loli</button>
-					<button type="button" class="btn btn-dark" onclick="japonese()">Japonese</button>
-					<button type="button" class="btn btn-dark" onclick="english()">English</button>
-					<button type="button" class="btn btn-dark" onclick="russian()">Russian</button>
+					<button type="button" class="btn btn-dark" onclick="playAudio('padrao')">Padrão</button>
+					<button type="button" class="btn btn-dark" onclick="playAudio('ratinho')">Ratinho version</button>
+					<button type="button" class="btn btn-dark" onclick="playAudio('loli')">Loli</button>
+					<button type="button" class="btn btn-dark" onclick="playAudio('japanese')">Japanese</button>
+					<button type="button" class="btn btn-dark" onclick="playAudio('english')">English</button>
+					<button type="button" class="btn btn-dark" onclick="playAudio('russian')">Russian</button>
 				</div>
 			</div>
 		</div>		
@@ -26,42 +26,27 @@
 
 <script type="text/javascript">
 
-//padrao
-function padrao(){
-	var audio1 = new Audio();
-	audio1.src = "/home/castro/Documentos/Prog/proj/audio/agua-coca-latao-pra-gringo-e-mais-caro.mp3";
-	audio1.play();
+let current;
+
+function playAudio(type) {
+	const path = "/home/castro/git/negaodabl/audio";
+	const audios = {
+		"padrao": `${path}/agua-coca-latao-pra-gringo-e-mais-caro.mp3`,
+		"ratinho": `${path}/agua-coca-latao-versao-ratinho-negao-da-bl.mp3`,
+		"loli": `${path}/loli.mp3`,
+		"japanese": `${path}/japones.mp3`,
+		"english": `${path}/negao-da-bl-em-ingles.mp3`,
+		"russian": `${path}/savetweetvid_zwidN7WQvX696RY7.mp3`
+	};
+	const audio = new Audio();
+	audio.src = audios[type];
+	if (current) { 
+		current.pause();
+	}
+	current = audio;
+	current.play();
 }
-//ratinho version
-function ratinho(){
-	var audio2 = new Audio();
-	audio2.src = "/home/castro/Documentos/Prog/proj/audio/agua-coca-latao-versao-ratinho-negao-da-bl.mp3";
-	audio2.play();
-}
-//loli
-function loli(){
-	var audio3 = new Audio();
-	audio3.src = "/home/castro/Documentos/Prog/proj/audio/loli.mp3";
-	audio3.play();
-}
-//japonese
-function japonese(){
-	var audio4 = new Audio();
-	audio4.src = "/home/castro/Documentos/Prog/proj/audio/japones.mp3";
-	audio4.play();
-}
-//english
-function english(){
-	var audio5 = new Audio();
-	audio5.src = "/home/castro/Documentos/Prog/proj/audio/negao-da-bl-em-ingles.mp3";
-	audio5.play();
-}
-//russian
-function russian(){
-	var audio6 = new Audio();
-	audio6.src = "/home/castro/Documentos/Prog/proj/audio/savetweetvid_zwidN7WQvX696RY7.mp3";
-	audio6.play();
-}
+
 </script>
 
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
