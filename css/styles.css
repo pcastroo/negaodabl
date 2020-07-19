@@ -2,11 +2,17 @@ body{
 	text-align: center;
 }
 
+@font-face{
+	font-family: product sans;
+	src: url("/home/castro/git/negaodabl/font/Product Sans Bold.ttf");
+}
+
 .tt{
 	background-color: #A9A9A9;
 	border-top-right-radius:10px;
 	border-top-left-radius: 10px;
 	font-size: 60px;
+	font-family: product sans;
 }
 
 .cont{
