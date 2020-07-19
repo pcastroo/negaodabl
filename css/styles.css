@@ -16,16 +16,19 @@ body{
 }
 
 .cont{
-	top: 30px;
+	top:200px;
+	left: 50%;
+	transform: translate(-50%);
 	background: #EEE;
-	height: 80vh;
+	height: 40vh;
+	width: 100vh;
 	position: relative;
 	border-radius: 40px;
 }
 
 .bott{
 	position: absolute;
-	top: 50%;
+	top: 55%;
 	left:50%;
 	transform: translate(-50%, -50%);
 }

@@ -16,13 +16,29 @@
 				<div class="cont">
 						<h1 class="tt" class="font-weight-bolder">NEGÃO DA BL</h1>
 					<div class="bott">
-						<button type="button" class="btn btn-dark" onclick="playAudio('padrao')">Padrão</button>
-						<button type="button" class="btn btn-dark" onclick="playAudio('ratinho')">Ratinho version</button>
-						<button type="button" class="btn btn-dark" onclick="playAudio('loli')">Loli</button>
-						<button type="button" class="btn btn-dark" onclick="playAudio('japanese')">Japanese</button>
-						<button type="button" class="btn btn-dark" onclick="playAudio('english')">English</button>
-						<button type="button" class="btn btn-dark" onclick="playAudio('russian')">Russian</button>
-						<button type="button" class="btn btn-dark" onclick="playAudio('espanhol')">Espanhol</button>
+						<div class="btn-group btn-group-toggle" data-toggle="buttons">
+						  <label class="btn btn-secondary active">
+						    <input type="radio" name="options" id="option1" autocomplete="off" onclick="playAudio('padrao')">Default
+						  </label>
+						  <label class="btn btn-secondary">
+						    <input type="radio" name="options" id="option2" autocomplete="off" onclick="playAudio('ratinho')">Ratinho
+						  </label>
+						  <label class="btn btn-secondary active">
+						    <input type="radio" name="options" id="option3" autocomplete="off" onclick="playAudio('loli')">Loli
+						  </label>
+						  <label class="btn btn-secondary">
+						    <input type="radio" name="options" id="option4" autocomplete="off" onclick="playAudio('japanese')">Japanese
+						  </label>
+						  <label class="btn btn-secondary active">
+						    <input type="radio" name="options" id="option5" autocomplete="off" onclick="playAudio('english')">English
+						  </label>
+						  <label class="btn btn-secondary">
+						    <input type="radio" name="options" id="option6" autocomplete="off" onclick="playAudio('russian')">Russian
+						  </label>
+						  <label class="btn btn-secondary active">
+						    <input type="radio" name="options" id="option7" autocomplete="off" onclick="playAudio('espanhol')">Espanhol
+						  </label>
+						</div>
 					</div>
 				</div>
 			</div>		
