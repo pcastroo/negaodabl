@@ -8,7 +8,8 @@ function playAudio(type) {
 		"english": `./audio/negao-da-bl-em-ingles.mp3`,
 		"russian": `./audio/savetweetvid_zwidN7WQvX696RY7.mp3`,
 		"espanhol": `./audio/savetweetvid_Zz_484Rw_tgzlzH8.mp3`,
-		"franceis": `./audio/franceis.mp3`
+		"franceis": `./audio/franceis.mp3`,
+		"italiano": `./audio/italiano.mp3`
 	};
 	const audio = new Audio();
 	audio.src = audios[type];
