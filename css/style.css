@@ -82,3 +82,18 @@ footer p{
     color: var(--color-white);
     opacity: 0.9;
 }
+
+/*SMALL DEVICES - SMARTPHONES*/
+@media screen and (min-width: 320px){
+    .container{
+        width: 50vh;
+        height: 40vh
+    }
+}
+
+@media screen and (min-width: 960px){
+    .container{
+        height: 30vh;
+        width: 100vh;
+    }
+}
