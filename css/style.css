@@ -1,0 +1,84 @@
+:root{
+    --background:#282a36;
+    --color-black:rgba(0, 0, 0, 0.9);
+    --color-red:#ce2e3c;
+    --color-white:#f8f8f2;
+    --color-orange:#ffb86c;
+}
+
+/*  reset https://www.ahnegao.com.br/wp-content/uploads/2020/06/5-17.jpg */
+*{margin: 0px;  font-size: 100%; outline: none; font-family: 'Poppins', sans-serif;}
+body{background-color: var(--background)}
+a[class*="btn"]{text-decoration: none; color: var(--color-black); font-weight: bold;}
+ul{list-style: none;}
+img{max-width: 100%;}
+h1{font-size:25px;}
+hr{background-color: var(--color-black)}
+
+/*  center  */
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.container{
+    background-image: url("https://uploads.metropoles.com/wp-content/uploads/2020/07/08124129/Neg%C3%A3o-da-BL.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 1px solid var(--color-black);
+    text-align: center;
+	height: 30vh;
+	width: 100vh;
+	border-radius: 40px;
+}
+
+/* bandeiras */
+.btn-franceis {background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg");}
+.btn-japones{background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg");}
+.btn-loli{background-image: url("https://viciados.net/anime/wp-content/uploads/2020/10/Kanna-Llorando-1.jpg");}
+.btn-ingles {background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg");}
+.btn-italiano{background-image: url("https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg");}
+.btn-espanhol{background-image: url("https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg");}
+.btn-russo{background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg");}
+.btn-ratinho{background-image: url("https://cdn-istoe-ssl.akamaized.net/wp-content/uploads/sites/14/2018/11/ratinho-sbt.jpg");}
+.btn-padrao{background-image: url("https://www.ahnegao.com.br/wp-content/uploads/2020/06/5-17.jpg");}
+
+
+/* Gradient buttons */
+.btn-gradient {
+    margin: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-decoration: none;
+	color: white;
+	padding: 10px 30px;
+	display: inline-block;
+	position: relative;
+	border: 1px solid var(--background);
+	border-bottom: 4px solid rgba(0, 0, 0, 0.7);
+	border-radius: 4px;
+	text-shadow: 0 1px 0 rgba(0,0,0,0.15);
+}
+
+.btn-gradient.mini{
+  padding: 4px 12px;  
+  font-size: 12px;
+}
+
+footer{
+    text-align: center;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+footer p{
+    color: var(--color-white);
+    opacity: 0.9;
+}
