@@ -9,7 +9,7 @@
 /*  reset https://www.ahnegao.com.br/wp-content/uploads/2020/06/5-17.jpg */
 *{margin: 0px;  font-size: 100%; outline: none; font-family: 'Poppins', sans-serif;}
 body{background-color: var(--background)}
-input[class*="btn"]{text-decoration: none; color: var(--color-black); font-weight: bold;}
+button[class*="btn"]{text-decoration: none; color: var(--color-black); font-weight: bold;}
 ul{list-style: none;}
 img{max-width: 100%;}
 h1{font-size:25px;}
